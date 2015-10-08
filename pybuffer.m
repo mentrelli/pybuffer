@@ -25,8 +25,8 @@ function [p, q, t] = prob_buffer(n0, L, M, tmax=6000, dt=1.0, nmax=30)
     Ndt = round(tmax/dt) ; % numero intervalli temporali
     
     p = zeros(nmax+1, Ndt+1) ;
-    q = zeros(Ndt+1) ;
-    t = zeros(Ndt+1) ;
+    q = zeros(1,Ndt+1) ;
+    t = zeros(1,Ndt+1) ;
     
     p(n0+1, 1) = 1 ; % si parte con il buffer nello stato n0
     
